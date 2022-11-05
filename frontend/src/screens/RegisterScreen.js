@@ -38,23 +38,23 @@ const RegisterScreen = ({ location, history }) => {
 
   return (
     <FormContainer>
-      <h1>Sign Up</h1>
+      <h1>Registre-se aqui</h1>
       {message && <Message variant='danger'>{message}</Message>}
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}
       <Form onSubmit={submitHandler}>
         <Form.Group controlId='name'>
-          <Form.Label>Name</Form.Label>
+          <Form.Label>Nome</Form.Label>
           <Form.Control
             type='name'
-            placeholder='Enter name'
+            placeholder='Entre o seu nome'
             value={name}
             onChange={(e) => setName(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='email'>
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label>Email</Form.Label>
           <Form.Control
             type='email'
             placeholder='Enter email'
@@ -64,35 +64,35 @@ const RegisterScreen = ({ location, history }) => {
         </Form.Group>
 
         <Form.Group controlId='password'>
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Senha</Form.Label>
           <Form.Control
             type='password'
-            placeholder='Enter password'
+            placeholder='Entre sua senha'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='confirmPassword'>
-          <Form.Label>Confirm Password</Form.Label>
+          <Form.Label>Confirme a senha</Form.Label>
           <Form.Control
             type='password'
-            placeholder='Confirm password'
+            placeholder='Confirme a senha'
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
         <Button type='submit' variant='primary'>
-          Register
+          Registrar-se
         </Button>
       </Form>
 
       <Row className='py-3'>
         <Col>
-          Have an Account?{' '}
+          Já tem uma conta?{' '}
           <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
-            Login
+            Entre aqui
           </Link>
         </Col>
       </Row>

@@ -20,7 +20,7 @@ const authUser = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(401)
-    throw new Error('Invalid email or password')
+    throw new Error('Email e/ou senha inválidos.')
   }
 })
 
@@ -34,7 +34,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
   if (userExists) {
     res.status(400)
-    throw new Error('User already exists')
+    throw new Error('Usuário já existente.')
   }
 
   const user = await User.create({
@@ -72,7 +72,7 @@ const getUserProfile = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(404)
-    throw new Error('User not found')
+    throw new Error('Usuário não encontrado.')
   }
 })
 
@@ -100,7 +100,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(404)
-    throw new Error('User not found')
+    throw new Error('Usuário não encontrado.')
   }
 })
 
@@ -123,7 +123,7 @@ const deleteUser = asyncHandler(async (req, res) => {
     res.json({ message: 'User removed' })
   } else {
     res.status(404)
-    throw new Error('User not found')
+    throw new Error('Usuário não encontrado.')
   }
 })
 
@@ -137,7 +137,7 @@ const getUserById = asyncHandler(async (req, res) => {
     res.json(user)
   } else {
     res.status(404)
-    throw new Error('User not found')
+    throw new Error('Usuário não encontrado.')
   }
 })
 
@@ -162,7 +162,7 @@ const updateUser = asyncHandler(async (req, res) => {
     })
   } else {
     res.status(404)
-    throw new Error('User not found')
+    throw new Error('Usuário não encontrado.')
   }
 })
 

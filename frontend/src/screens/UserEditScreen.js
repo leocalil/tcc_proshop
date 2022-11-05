@@ -53,7 +53,7 @@ const UserEditScreen = ({ match, history }) => {
         Retornar
       </Link>
       <FormContainer>
-        <h1>Edit User</h1>
+        <h1>Editar usuário</h1>
         {loadingUpdate && <Loader />}
         {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
         {loading ? (
@@ -63,20 +63,20 @@ const UserEditScreen = ({ match, history }) => {
         ) : (
           <Form onSubmit={submitHandler}>
             <Form.Group controlId='name'>
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Nome</Form.Label>
               <Form.Control
                 type='name'
-                placeholder='Enter name'
+                placeholder='Nome'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
             <Form.Group controlId='email'>
-              <Form.Label>Email Address</Form.Label>
+              <Form.Label>Email</Form.Label>
               <Form.Control
                 type='email'
-                placeholder='Enter email'
+                placeholder='Email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               ></Form.Control>
@@ -92,7 +92,7 @@ const UserEditScreen = ({ match, history }) => {
             </Form.Group>
 
             <Button type='submit' variant='primary'>
-              Update
+              Atualizar
             </Button>
           </Form>
         )}

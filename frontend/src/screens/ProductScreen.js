@@ -179,13 +179,13 @@ const ProductScreen = ({ history, match }) => {
                   {userInfo ? (
                     <Form onSubmit={submitHandler}>
                       <Form.Group controlId='rating'>
-                        <Form.Label>Rating</Form.Label>
+                        <Form.Label>Avaliação</Form.Label>
                         <Form.Control
                           as='select'
                           value={rating}
                           onChange={(e) => setRating(e.target.value)}
                         >
-                          <option value=''>Select...</option>
+                          <option value=''>Selecione...</option>
                           <option value='1'>1 - Ruim</option>
                           <option value='2'>2 - Médio</option>
                           <option value='3'>3 - Bom</option>
@@ -194,7 +194,7 @@ const ProductScreen = ({ history, match }) => {
                         </Form.Control>
                       </Form.Group>
                       <Form.Group controlId='comment'>
-                        <Form.Label>Comment</Form.Label>
+                        <Form.Label>Comentário</Form.Label>
                         <Form.Control
                           as='textarea'
                           row='3'
