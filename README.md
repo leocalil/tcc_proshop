@@ -1,7 +1,8 @@
 # Loja do Leo
 
-> TÍTULO: Blueprint (Modelo) de um E-Commerce Genérico\
+> Título: Blueprint (Modelo) de um E-Commerce Genérico\
 > Autor: LEONARDO CALIL BARRIATTO\
+> Framework/arquitetura: MERN Stack
 > Lajeado, Rio Grande do Sul\
 > Novembro de 2022\
 > Professor Orientador: Robson da Motta\
