@@ -12,7 +12,7 @@
 Projeto entregue ao Curso EaD de Bacharelado em Engenharia de Software como pré-requisito obrigatório à obtenção do título de Bacharel em Engenharia de Software.
 
 ## Versão externa funcional (exemplo de uso)
-....
+https://loja-do-leo.herokuapp.com/
 
 ## Características
 
